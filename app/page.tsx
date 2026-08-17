@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ContactButton from "./ContactButton";
 
 const capabilities = [
   ["01", "Performance Marketing", "Meta Ads and Google Ads campaigns across B2B and B2C, built to turn media spend into qualified leads, booked appointments, and revenue.", "Meta Ads · Google Ads · B2B & B2C"],
@@ -85,7 +86,7 @@ export default function Home() {
         <div className="nav-links">
           <a href="#capabilities">Capabilities</a><a href="#growth">Growth</a><a href="#skills">Skills</a><a href="#experience">Experience</a>
         </div>
-        <a className="nav-cta" href="https://www.linkedin.com/in/jaffarrazasyed" target="_blank" rel="noreferrer">Let&apos;s connect ↗</a>
+        <ContactButton className="nav-cta" label="Let's connect ↗" />
       </nav>
 
       <section className="hero" id="top">
@@ -157,7 +158,7 @@ export default function Home() {
         </article>
       </section>
 
-      <footer><div><p className="index">LET&apos;S BUILD SOMETHING THAT GROWS</p><h2>Need more qualified leads?</h2></div><a href="https://www.linkedin.com/in/jaffarrazasyed" target="_blank" rel="noreferrer">Start a conversation ↗</a><p className="copyright">© 2026 Syed Jaffar Raza · Islamabad, Pakistan · jeffreza.github.io</p></footer>
+      <footer><div><p className="index">LET&apos;S BUILD SOMETHING THAT GROWS</p><h2>Need more qualified leads?</h2></div><ContactButton className="footer-cta" label="Start a conversation ↗" /><p className="copyright">© 2026 Syed Jaffar Raza · Islamabad, Pakistan · jeffreza.github.io</p></footer>
     </main>
   );
 }
